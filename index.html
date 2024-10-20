@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ameenul Firdous Portfolio</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #121212;
+            color: #ffffff;
+            font-family: 'Arial', sans-serif;
+            scroll-behavior: smooth;
+        }
+        /* Navbar */
+        .navbar {
+            background-color: #1f1f1f;
+        }
+        .navbar a {
+            color: #f8f9fa;
+            margin: 0 15px;
+            text-decoration: none;
+        }
+        .navbar a:hover {
+            color: #007bff;
+        }
+
+        /* Sections */
+        section {
+            padding: 80px 0;
+        }
+        .header {
+            text-align: center;
+            background-color: #1f1f1f;
+            padding: 40px 0;
+        }
+        .profile-img {
+            max-width: 10%;
+		max-height: 10%;
+            border-radius: 50%;
+            margin-bottom: 20px;
+            animation: fadeInDown 1.5s;
+        }
+        .header h1 {
+            font-size: 2.5rem;
+            font-weight: bold;
+            animation: fadeIn 2s;
+        }
+
+        /* Card Hover Effect */
+        .card {
+            background-color: #1f1f1f;
+            transition: transform 0.3s, box-shadow 0.3s;
+            color: #ffffff;
+            border: none;
+        }
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+        }
+
+        /* Section Titles */
+        .section-title {
+            font-size: 1.75rem;
+            font-weight: bold;
+            margin-bottom: 20px;
+            color: #007bff;
+            animation: fadeInLeft 1.5s;
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+        @keyframes fadeInDown {
+            0% { opacity: 0; transform: translateY(-20px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+        @keyframes fadeInLeft {
+            0% { opacity: 0; transform: translateX(-20px); }
+            100% { opacity: 1; transform: translateX(0); }
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 2rem;
+            }
+            .section-title {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <div class="navbar-nav mx-auto">
+                <a class="nav-link" href="#profile">Profile</a>
+                <a class="nav-link" href="#education">Education</a>
+                <a class="nav-link" href="#skills">Skills</a>
+                <a class="nav-link" href="#internship">Internship</a>
+                <a class="nav-link" href="#projects">Projects</a>
+                <a class="nav-link" href="#certifications">Certifications</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header Section -->
+    <section class="header" id="header">
+        <img src="image.png" alt="Profile Image" class="profile-img">
+        <h1>Ameenul Firdous</h1>
+        <p><strong>Phone:</strong> +91 8089182094 | <strong>Email:</strong> firdousfiru0@gmail.com</p>
+        <p><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/ameenul-firdous" target="_blank" style="color: #007bff;">linkedin.com/in/ameenul-firdous</a></p>
+    </section>
+
+    <!-- Profile Section -->
+    <section id="profile">
+        <div class="container">
+            <h2 class="section-title">Profile</h2>
+            <p>As an MCA student at CUSAT with a strong passion for software development, I am dedicated to pursuing a career in this field. My solid foundation in mathematics, reasoning, and analytical skills allows me to effectively analyze data and derive meaningful insights, essential for developing efficient and innovative software solutions. I am committed to mastering new technologies and applying my skills to contribute effectively to dynamic software development teams.</p>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education">
+        <div class="container">
+            <h2 class="section-title">Education</h2>
+            <div class="card mb-3">
+                <div class="card-body">
+                    <h5 class="card-title">Cochin University of Science and Technology</h5>
+                    <p class="card-text">Master of Computer Application, Computer Science (7.33 CGPA)</p>
+                    <small class="text-muted">July 2023 – May 2025</small>
+                </div>
+            </div>
+            <div class="card mb-3">
+                <div class="card-body">
+                    <h5 class="card-title">S.D. College, Kerala University</h5>
+                    <p class="card-text">Bachelor of Mathematics (6.03 CGPA)</p>
+                    <small class="text-muted">July 2018 – May 2021</small>
+                </div>
+            </div>
+            <div class="card mb-3">
+                <div class="card-body">
+                    <h5 class="card-title">Government HSS, Kalavoor</h5>
+                    <p class="card-text">Plus Two - Biology Science (93%)</p>
+                    <small class="text-muted">July 2016 – May 2018</small>
+                </div>
+            </div>
+            <div class="card mb-3">
+                <div class="card-body">
+                    <h5 class="card-title">Government High School, Mannancherry</h5>
+                    <p class="card-text">SSLC (Secondary School Leaving Certificate) (99%)</p>
+                    <small class="text-muted">July 2015 – May 2016</small>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <div class="container">
+            <h2 class="section-title">Skills</h2>
+            <ul class="list-group">
+                <li class="list-group-item bg-dark text-light"><strong>Languages:</strong> Python, Java, C, SQL</li>
+                <li class="list-group-item bg-dark text-light"><strong>Frameworks:</strong> Pandas, Numpy, Scikit-learn, Matplotlib</li>
+                <li class="list-group-item bg-dark text-light"><strong>Tools:</strong> Git, ChatGPT, Excel, PowerPoint, MySQL</li>
+                <li class="list-group-item bg-dark text-light"><strong>Platforms:</strong> Jupyter, VS Code</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Internship Section -->
+    <section id="internship">
+        <div class="container">
+            <h2 class="section-title">Internship</h2>
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Indian Institute of Information Technology (IIIT) Kottayam</h5>
+                    <p class="card-text">Developed a mobile app using Flutter to record sensor data from smartphones. Processed the collected sensor data and utilized classifiers and Recurrent Neural Networks (RNN) to classify the processed data.</p>
+                    <small class="text-muted">June 2024 (Hybrid)</small>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <div class="container">
+            <h2 class="section-title">Projects</h2>
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Emotion Detection using ML</h5>
+                    <p class="card-text">Constructed a machine learning model to detect emotions in tweets using NLP techniques, achieving 85% accuracy in emotion detection.</p>
+                    <small class="text-muted">April 2024 – Present</small>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications">
+        <div class="container">
+            <h2 class="section-title">Certifications</h2>
+            <ul class="list-group">
+                <li class="list-group-item bg-dark text-light">Getting Started with Enterprise-grade AI (IBM)</li>
+                <li class="list-group-item bg-dark text-light">Data Fundamentals (IBM)</li>
+                <li class="list-group-item bg-dark text-light">Data Analytics (IBM)</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
